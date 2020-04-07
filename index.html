@@ -10,26 +10,20 @@
 
     <form>
         <label for="roast-selection">Roast</label>
-        <select id="roast-selection">
+        <select id="roast-selection" name="roast-selection">
+            <option id="all">all</option>
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
         <label for="coffee-name">Coffee Name</label>
         <input type="text" id="coffee-name" name="coffee-name">
-        <input id="submit" type="submit" />
+        <input id="submit" type="submit"/>
     </form>
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-        <div id="coffees"></div>
-<!--    </table>-->
+
+    <div id="coffees"></div>
+
 
     <script src="main.js"></script>
 </body>

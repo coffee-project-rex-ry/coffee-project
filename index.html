@@ -2,35 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coffee Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Coffee!</h1>
+<body font-family="san-serif">
+<h1 class="text-center">Coffee!</h1>
 
-    <form>
-        <label for="roast-selection">Roast</label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <label for="coffee-name">Coffee Name</label>
-        <input type="text" id="coffee-name" name="coffee-name">
-        <input id="submit" type="submit" />
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col">
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-        <div id="coffees"></div>
-<!--    </table>-->
+            <form>
+                <label for="roast-selection">Roast</label>
+                <select id="roast-selection" name="roast-selection">
+                    <option id="all">all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <label for="coffee-name">Coffee Name</label>
+                <input type="text" id="coffee-name" name="coffee-name">
+                <input id="submit" type="submit"/>
+            </form>
+        </div>
+        <div class="col">
+            <div id="coffees"></div>
+        </div>
+    </div>
+</div>
 
-    <script src="main.js"></script>
+
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>

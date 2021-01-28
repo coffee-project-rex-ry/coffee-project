@@ -30,9 +30,9 @@ function renderCoffees(coffees) {
     // var all = document.getElementById('all');
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(nameInput)) {
+        if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(nameInput.toLowerCase())) {
             filteredCoffees.push(coffee);
-        } else if (selectedRoast === 'all' && coffee.name.toLowerCase().includes(nameInput)) {
+        } else if (selectedRoast === 'all' && coffee.name.toLowerCase().includes(nameInput.toLowerCase())) {
             filteredCoffees.push(coffee);
         }
 

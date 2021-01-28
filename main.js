@@ -2,10 +2,10 @@
 
 
 function renderCoffee(coffee) {
-    var html = '<div>';
+    var html = '<div class="w-50 d-inline-flex align-items-baseline mb-4">';
     // html += '<div>' + coffee.id + '</div>';
     html += '<h1 id="coffeeNameHead">' + coffee.name + '</h1>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<p class="ml-2">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;

@@ -40,6 +40,19 @@ function renderCoffees(coffees) {
     coffeeInfo.innerHTML = renderCoffees(filteredCoffees);
 }
 
+ function addCoffee(e) {
+    e.preventDefault();
+    var roastToAdd = addRoast.value;
+    var nameToAdd = addCoffeeName.value;
+
+    coffees.push({
+        name: nameToAdd,
+        roast: roastToAdd,
+        id: coffees.length + 1
+    })
+    coffeeInfo.innerHTML = renderCoffees(coffees);
+ }
+
 
 var roastListener = document.getElementById('roast-selection');
 roastListener.addEventListener('change', updateCoffees);
@@ -71,9 +84,13 @@ var coffeeInfo = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var coffeeName = document.querySelector('#coffee-name');
+var addRoast = document.querySelector('#add-roast');
+var addCoffeeName = document.querySelector('#add-coffee-name');
+var addSubmit = document.querySelector('#add-submit');
 
 coffeeInfo.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+addSubmit.addEventListener('click', addCoffee);
 
 

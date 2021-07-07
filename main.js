@@ -3,7 +3,6 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="w-50 d-inline-flex align-items-baseline mb-4">';
-    // html += '<div>' + coffee.id + '</div>';
     html += '<h1 id="coffeeNameHead">' + coffee.name + '</h1>';
     html += '<p class="ml-2">' + coffee.roast + '</p>';
     html += '</div>';
@@ -27,7 +26,6 @@ function renderCoffees(coffees) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var nameInput = coffeeName.value;
-    // var all = document.getElementById('all');
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(nameInput.toLowerCase())) {
